@@ -7,11 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio of Richie Porras</title>
     <link href="images\favicon.ico" rel="icon" type="image/x-icon" />
+    <style>
+        #new-section {
+            border-style: ridge;
+        }
+    </style>
 </head>
 
 <body>
 
-    <section id="navigation-bar">
+    <section id="nav-bar">
         <nav id="top-nav-bar">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -30,7 +35,7 @@
     </header>
 
     <main>
-        <section id="about-section">
+        <section id="new-section">
             <h2 id="about">About</h2>
             <div id="about_div">
                 <img src="images\Dog.jpg" alt="Temporary Picture" width="250" height="250">
@@ -46,7 +51,7 @@
             </div>
         </section>
 
-        <section id="projects-section">
+        <section id="new-section">
             <h2 id="projects">Projects</h2>
             <div id="projects-div">
                 <div id="projects">
@@ -75,44 +80,46 @@
             </div>
         </section>
 
-        <section id="coursework-section">
+        <section id="new-section">
             <h2 id="coursework">Coursework</h2>
             <div id="coursework-div">
 
                 <h3>CSE 100: Advanced Data Structures</h3>
                 <p>
-                    Applied fundamental data structures using C++ that builds on projects featuring: object-oriented
-                    programming ideas, memory management, pointers,
-                    and recursion.
+                    <span> Applied fundamental data structures using C++ that builds on projects featuring:
+                        object-oriented
+                        programming ideas, memory management, pointers,
+                        and recursion.</span>
                 </p>
 
                 <h3>CSE 101: Design & Analysis of Algorithms</h3>
 
                 <p>
-                    NP-complete problems; graph algorithms, greedy algorithms, divide and conquer, and dynamic
-                    programming with complexity measures. Worked closely with 4 other UCSD students discussing and
-                    analyzing various types of algorithms.
+                    <span> NP-complete problems; graph algorithms, greedy algorithms, divide and conquer, and dynamic
+                        programming with complexity measures. Worked closely with 4 other UCSD students discussing and
+                        analyzing various types of algorithms.</span>
                 </p>
 
                 <h3>CSE 110: Software Engineering</h3>
 
                 <p>
-                    Exposed to practical industry-tested experience with an emphasis on:
-                    Team development: Working with 8 other UCSD students on a 10-week programming bullet journal
-                    project. Team utilized Slack, GitHub, etc for efficient communication and timeliness under Agile
-                    methodology.
+                    <span> Exposed to practical industry-tested experience with an emphasis on:
+                        Team development: Working with 8 other UCSD students on a 10-week programming bullet journal
+                        project. Team utilized Slack, GitHub, etc for efficient communication and timeliness under Agile
+                        methodology.</span>
                 </p>
 
                 <h3>CSE 120: Principles of Computer Operating Systems</h3>
 
                 <p>
-                    Introduced the basic concepts of kernel structure, concurrency, scheduling, memory management, file
-                    systems, and communication.
+                    <span> Introduced the basic concepts of kernel structure, concurrency, scheduling, memory
+                        management, file
+                        systems, and communication.</span>
                 </p>
             </div>
         </section>
 
-        <section id="skills-section">
+        <section id="new-section">
             <h2 id="skills">Skills</h2>
             <div id="skills-div">
                 <div id="skills">
@@ -131,7 +138,7 @@
             </div>
         </section>
 
-        <section id="contact-section">
+        <section id="new-section">
             <h2 id="contact">Contact</h2>
             <div id="contact-div">
                 <fieldset>
@@ -152,7 +159,7 @@
             </div>
         </section>
 
-        <section id="experiment-section">
+        <section id="new-section">
             <h2>Experiments for HW2</h2>
 
             <label for="game-select">Choose a video game:</label>
@@ -228,7 +235,96 @@
             <details>
                 <summary>Worldcup 2022</summary>
                 <i>Argentina won the world cup.</i>
+                <aside>
+                    <h3>Trivia: </h3>
+                    <p>This is Messi's 2nd World Cup final he participated in.</p>
+                </aside>
             </details>
+
+            <br>
+            <br>
+
+            <label for="cse">Choose your favorite CSE class:</label>
+            <input list="cse-classes" name="cse" id="cse">
+
+            <datalist id="cse-classes">
+                <option value="CSE100">
+                <option value="CSE101">
+                <option value="CSE105">
+                <option value="CSE110">
+                <option value="CSE120">
+            </datalist>
+
+            <br>
+            <br>
+            <p>Choose your favorite snack:</p>
+            <form>
+                <input type="radio" id="chips" name="fav_snacks" value="CHIPS">
+                <label for="chips">Chips</label><br>
+                <input type="radio" id="candy" name="fav_snacks" value="CANDY">
+                <label for="candy">Candy</label><br>
+                <input type="radio" id="Cookies" name="fav_snacks" value="COOKIES">
+                <label for="cookies">Cookies</label>
+            </form>
+
+            <h3> Some 3D Zelda games ranked:</h3>
+            <ol>
+                <li>Ocarina of Time</li>
+                <li>Majoras Mask</li>
+                <li>Wind Waker</li>
+                <li>Twilight Princess</li>
+                <li>Skyward Sword</li>
+            </ol>
+
+            <br>
+            <p> Some code with the code tag</p>
+            <code>
+                x = 5;
+                y = 4;
+                z = x + y;
+                printf("sum: %d", z);
+            </code>
+
+            <p> Button existance</p>
+            <button type="button">I don't work :(!</button>
+
+            <p>JavaScript not allowed to reveal template:</p>
+            <template>
+                <h2>Cat</h2>
+                <img src="images\puss-in-boots.jpg" width="214" height="204">
+            </template>
+
+            <p> iframe test: </p>
+
+            <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+                title="Map">
+            </iframe>
+
+            <p> Picture tag test: change browser size.</p>
+
+            <picture>
+                <source media="(min-width:1800px)" srcset="images\yellow-bird.jpg">
+                <source media="(min-width:1300px)" srcset="images\red-bird.jpg">
+                <img src="images\orange-bird.jpg" alt="Birds" style="width:auto;">
+            </picture>
+
+            <p> Canvas incoming . . . </p>
+            <canvas width="300" height="300">
+                This is a test with Canvas and a favorite color.
+            </canvas>
+
+            <script>
+                const canvas = document.querySelector('canvas');
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = 'Blue';
+                ctx.fillRect(10, 10, 100, 100);
+            </script>
+
+            <p> svg test</p>
+            <svg width="150" height="150">
+                <circle cx="75" cy="75" r="50" stroke="black" stroke-width="2" fill="orange" />
+            </svg>
 
         </section>
     </main>
